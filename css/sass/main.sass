@@ -1,0 +1,613 @@
+@import "bourbon/bourbon"
+
+body
+	font-weight: normal
+	font-size: 11px
+	min-width: 320px
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+a 
+	color: #fff
+	text-decoration: none
+h2 
+	font-family: "GOST-2-304-81typeB", sans-serif
+	font-size: 36px
+	color: #3b5998
+	text-transform: uppercase
+	text-align: center
+	span 
+		color: #ff4747
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+
+.loader 
+	background: none repeat scroll 0 0 #fff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner 
+		background-image: url("../img/loading.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+header
+	max-width: 1030px
+	margin: 0 auto
+	position: relative
+
+.logo
+	margin-top: 18px
+	margin-bottom: 11px
+
+.phone
+	float: right
+	font-size: 32px
+	color: #8e3331
+	font-family: "Lato-Regular", sans-serif
+	margin-top: 17px
+	margin-right: 8px
+	span
+		font-size: 20px
+
+.navigation.stickytop 
+	position: fixed
+	top: 0
+	width: 100%		
+	z-index: 100	
+
+
+// header-end
+
+.navigation
+	background-image: url("../img/bg-top.png")
+	background-repeat: repeat
+	nav 
+		text-align: center
+		padding: 1px 0
+		margin-right: 5px
+		ul
+			padding: 0
+			list-style: none
+			li 
+				display: inline-block
+				border-left: 1px solid #fff
+				a 
+					line-height: 26px
+					padding: 0 55px			
+					font-size: 16px
+					font-family: "Roboto-Regular", sans-serif
+			li:last-child
+				border-right: 1px solid #fff
+				a
+					padding-right: 50px
+
+
+//Toggle Mnu 320-767px
+
+
+
+.toggle_mnu
+	width: 40px
+	height: 40px
+	border: 3px solid #1a7fc6
+	position: absolute
+	float: left
+	z-index: 200
+	left: 20px
+	top: 23px
+	background-color: rgb(255,255,255)
+	position: fixed
+	span
+		display: block
+
+
+
+$w: 20px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 5px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: #1a7fc6
+	border: none
+	border-radius: 2px 2px 2px 2px
+	transition: transform 0.5s, top 0.2s
+	display: block
+			
+svg
+	path
+		fill: #e0e0e0
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: 4.6px
+	background: #1a7fc6
+	border: none
+	border-radius: 2px 2px 2px 2px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: 8.5px
+	background: #1a7fc6
+	border: none
+	border-radius: 2px 2px 2px 2px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 5px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 2px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+
+.hidden-mnu
+	position: absolute
+	display: none
+	top: 73px
+	left: 0
+	background-image: url("../img/bg-top.png")
+	z-index: 200
+	position: fixed
+	ul
+		float: none
+		text-align: center
+		li
+			display: block
+			margin-left: 0
+			a 
+				text-transform: none
+				line-height: 2em
+				font-size: 16px
+				font-family: "Roboto-Regular", sans-serif
+
+			&.active
+				text-decoration: underline
+			&:hover
+				border-bottom: none
+	> ul
+		padding: 10px
+		> li
+			
+			&:hover
+				color: #fff
+				background-color: rgba(255,255,255,.1)
+				transition: all 1s ease
+				text-decoration: none
+
+//Toggle Mnu-end	
+// navigation-end
+
+
+// section-poster
+.poster
+	background-image: url("../img/bg-pinok.jpg")
+	background-position: center center
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	-ms-background-size: cover
+	background-size: cover
+	height: 567px
+
+
+.poster-wrap
+	max-width: 1030px
+	margin: 0 auto
+
+.poster-item
+	background-color: #fff
+	border-radius: 10px
+	width: 492px
+	height: 387px
+	margin-top: 88px
+	margin-left: 2px
+	h1
+		font-size: 58.28px
+		font-family: "GOST-2-304-81typeA", sans-serif
+		color: #3b5998
+		text-transform: uppercase
+		text-align: center
+		line-height: 59.12px
+		padding-top: 40px
+		margin-bottom: 17px
+		span
+			color: #ff4747
+	p
+		font-family: "GOST-2-304-81typeA", sans-serif
+		font-size: 40px
+		color: #3b5998
+		font-weight: bold
+		margin: 0
+		text-align: center
+		line-height: 47px
+		span
+			color: #ff4747
+.btn
+	margin-top: 21px
+	margin-left: 69px
+	.poster-btn
+		font-size: 18px
+		font-family: "OpenSans-Bold", sans-serif
+		text-transform: uppercase
+		background-color: #ff4747	
+		border-radius: 8px
+		text-align: center
+		height: 52px
+		line-height: 52px
+		padding: 13px 54px
+
+// section-poster-end
+
+// section-team-motivate
+
+.team-motivate
+	background: #f4f8ff
+	border-bottom: 1px solid #a3b2d0
+	overflow: hidden
+	.motivate-img
+		max-width: 439px
+		height: auto
+		margin-right: 51px
+		margin-top: 61px
+		float: right
+		img
+			width: 100%		
+			
+	.motivate-text
+		float: left
+		font-family: "GOST-2-304-81typeB", sans-serif
+		font-size: 38px
+		color: #ff4747
+		font-weight: bold
+		margin-top: 84px
+		line-height: 46px
+		margin-left: -10px
+		max-width: 490px
+		letter-spacing: 0.4px
+
+// section-team-motivate-end
+
+
+// section-benefits
+
+.benefits
+	h2
+		margin-top: 82px
+		margin-bottom: 15px
+		letter-spacing: 0.4px
+	p 
+		font-family: "OpenSans", sans-serif
+
+		margin: 0
+		color: #444
+		line-height: 40px
+		font-size: 20px
+		text-align: center
+		letter-spacing: 0.6px
+		span 
+			.fa 
+				color: #ff4747
+				font-size: 18px
+			
+// section-benefits-end
+
+// section-features
+
+.features
+	background-color: #f4f8ff
+	border-bottom: 1px solid #a3b2d0
+	border-top: 1px solid #a3b2d0
+	margin-top: 88px
+	overflow: hidden
+	h2 
+		margin-top: 90px
+		margin-bottom: 71px
+		letter-spacing: 0.4px
+
+.features-wrap
+	max-width: 1030px
+	margin: 0 auto 
+	height: 250px
+	.feature-item
+		width: 190px
+		margin-left: 9px
+		.feature-img
+			display: block
+			width: 120px
+			height: 120px	
+			background-image: url("../img/features.png")
+			background-position: 0 0
+			margin: 0 auto 32px
+		.img-feature2
+			background-image: url("../img/features.png")
+			background-position: 0 -120px
+		.img-feature3
+			background-image: url("../img/features.png")
+			background-position: 0 -240px
+		.img-feature4
+			background-image: url("../img/features.png")
+			background-position: 0 -360px
+		.feature-descr
+			display: block
+			font-size: 16px
+			font-family: "OpenSans", sans-serif
+			line-height: 24px
+			color: #111
+			text-align: center
+			span 
+				font-family: "OpenSans-Bold", sans-serif
+	.item2
+		margin-left: 16px
+	.item3
+		margin-left: 20px
+	.item4
+		margin-left: 25px
+
+.features
+	.btn
+		margin: 73px auto 96px
+		width: 356px
+		position: relative
+		.arrow
+			width: 70px
+			height: 50px
+		.prev
+			position: absolute
+			top: -10px
+			left: -102px
+			background-image: url("../img/sprite.png")
+			background-position: 0 0
+		.next
+			position: absolute
+			top: -10px
+			right: -99px
+			background-image: url("../img/sprite.png")
+			background-position: 0 -50px
+			
+// section-features-end
+
+// section-structure
+
+.structure
+	h2 
+		margin: 85px 5px 73px 0
+		letter-spacing: 0.2px
+	.structure-wrap
+		max-width: 1030px
+		margin: 0 auto
+
+.structure-item
+	width: 180px
+	margin: 0 auto
+	.structure-img
+		margin: 0 auto 21px
+		width: 39px
+		height: 52px	
+		background-image: url("../img/features.png")
+		background-position: 39px 0
+	.structure-img2
+		margin: 0 auto 22px
+		width: 51px
+		height: 51px	
+		background-image: url("../img/features.png")
+		background-position: 51px -120px
+	.structure-img3
+		margin: 0 auto 21px
+		width: 56px
+		height: 52px	
+		background-image: url("../img/features.png")
+		background-position: 56px -240px
+	.structure-img4
+		margin: 0 auto 5px
+		width: 32px
+		height: 68px	
+		background-image: url("../img/features.png")
+		background-position: 32px -360px
+
+	.structure-descr
+		font-size: 16px
+		font-family: "OpenSans-Semibold", sans-serif
+		line-height: 26px
+		text-align: center
+		color: #1f201f
+		p 
+			margin: 0
+
+
+	// section-structure-end
+
+	// section-coach
+.coach
+	background-image: url("../img/coach-bg.jpg")
+	background-position: center center
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	-ms-background-size: cover
+	background-size: cover
+	height: 562px
+	border-bottom: 1px solid #a3b2d0
+	border-top: 1px solid #a3b2d0
+	margin-top: 116px
+.coach-wrap
+	text-align: left
+	.coach-img
+		float: right
+		margin-right: 78px
+		margin-top: 63px
+		max-width: 333px
+		height: auto
+		img
+			width: 100%
+	h2 
+		text-align: left
+		margin: 119px 0 15px -17px
+		line-height: 46px
+		letter-spacing: 0.2px
+	ul 
+		padding: 0
+		list-style: none
+		li 
+			font-size: 18px
+			font-family: "OpenSans", sans-serif
+			line-height: 32px
+			color: #1f201f
+			margin-left: -14px
+			span 	
+				font-family: "OpenSans-Bold", sans-serif
+
+// section-coach-end
+
+// section-registration
+.registration
+	text-align: center
+	h2 
+		margin: 85px 3px 23px 0
+	p 
+		margin: 0 3px 0 0
+		font-family: "OpenSans", sans-serif
+		color: #484849
+		font-size: 18px
+		span 
+			color: #3b5998
+.registration-wrap
+	max-width: 1030px
+	margin: 0 auto 
+
+form
+	margin-top: 43px
+	p.p-form 
+		text-align: center
+		color: #484849
+		font-size: 14px
+		font-family: "OpenSans", sans-serif
+		padding-top: 110px
+		line-height: 17px
+		margin-bottom: 33px
+	input
+		width: 83.7%
+		height: 41px
+		border-radius: 5px
+		border: 1px solid #3b5998
+		font-size: 16px
+		font-family: "OpenSans", sans-serif
+		color: #818283
+		padding-left: 19px
+		margin-bottom: 9px
+	input.name,
+	input.user-phone
+		float: right
+		margin-right: 8px
+	input.email,
+	input.birthday
+		float: left
+		margin-left: 3px
+
+	input[type="submit"]
+		font-size: 18px
+		font-family: "OpenSans-Bold", sans-serif
+		text-transform: uppercase
+		background-color: #ff4747	
+		color: #fff
+		border-radius: 8px
+		border: none
+		text-align: center
+		height: 52px
+		line-height: 52px
+		width: 34.5%
+
+// section-registration-end
+
+// footer
+
+.footer-top
+	background-image: url("../img/bg-top.png")
+	width: 100%
+	overflow: hidden
+	margin-top: 70px
+
+.footer-top-wrap
+	max-width: 1030px
+	margin: 0 auto
+	.logo-bottom
+		width: 93px
+		height: 47px
+		margin: 19px 0 16px 17px
+	.social
+		margin: 30px auto 0
+		width: 190px
+		.social-item
+			margin: 0 9px
+			float: left
+			.fa-facebook-square
+				font-size: 28px
+			.fa-youtube-play
+				font-size: 31px
+		.ig
+			margin-top: 2px
+			.fa-instagram
+				font-size: 26px
+		.vk
+			margin-top: -2px
+			.fa-vk
+				font-size: 31px
+	.phone
+		color: #fff
+		float: right
+		margin-right: 20px
+				
+.footer-bottom-copy
+	text-align: center
+	background-color: #3d3e3e
+	font-size: 14px
+	font-family: "OpenSans", sans-serif
+	line-height: 39px
+	color: #acacac

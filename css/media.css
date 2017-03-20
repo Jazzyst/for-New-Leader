@@ -1,0 +1,304 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+	.navigation nav ul li:last-child a{
+		padding-right: 53px;
+	}
+	.navigation nav ul li a{
+		padding: 0 53px;
+	}
+	.poster{
+		height: 521px;
+	}
+	.logo {
+    margin-left: 10px;
+	}
+	.poster-item {
+    margin-left: 5px;
+	}
+}
+
+@media only screen and (max-width : 980px) {
+	.navigation nav ul li a{
+		padding: 0 48px;
+	}
+	.navigation nav ul li:last-child a{
+		padding-right: 48px;
+	}
+}
+
+@media only screen and (max-width : 960px) {
+	.navigation nav ul li a{
+		padding: 0 46px;
+	}
+	.navigation nav ul li:last-child a{
+		padding-right: 46px;
+	}
+	.coach-wrap ul li{
+		font-size: 15px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px) {
+	form input[type="submit"]{
+		padding: 0 10px;
+	}
+	.coach-wrap ul li {
+    font-size: 14px;
+	}
+	.navigation nav ul li a{
+		padding: 0 29px;
+	}
+	.navigation nav ul li:last-child a{
+		padding-right: 29px;
+	}
+
+	.poster{
+		height: 403px;
+	}
+	.poster-item {
+    width: 373px;
+    height: 307px;
+    margin-top: 40px;
+    margin-left: 5px;
+	}
+	.poster-item h1 {
+    font-size: 45.28px;
+    line-height: 45.12px;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  .poster-item p {
+    font-size: 32px;
+    text-align: center;
+    line-height: 34px;
+	}
+	.poster-item .btn {
+    margin-left: 30px;
+	}
+	.poster-item .btn .poster-btn{
+		padding: 12px 30px;
+	}
+	.team-motivate .motivate-text{
+		font-size: 27px;
+		line-height: 38px;
+	}
+	h2{
+		font-size: 33px;
+	}
+	.benefits p{
+		font-size: 16px;
+	}
+	.features-wrap .feature-item,
+	.features-wrap .item2,
+	.features-wrap .item3,
+	.features-wrap .item4{
+		margin-left: 0;
+	}
+	.coach-img{
+		margin-right: 78px
+		margin-top: 63px
+		max-width: 333px
+
+	}
+	.coach{
+		height: 501px;
+	}
+	.coach-wrap h2 {
+    margin: 58px 0 15px -17px;
+
+}
+}
+
+@media only screen and (max-width : 768px) {
+
+	.navigation nav ul li:last-child a{
+		padding-right: 21px;
+	}
+	.coach{
+		margin-top: 60px;
+		height: 477px;
+	}
+	form input[type="submit"]{
+		width: 263px;
+	}
+
+}
+
+@media only screen and (max-width : 767px) {
+	.logo{
+		margin-left: 70px;
+	}
+	.features-wrap .feature-item{
+		margin: 0 auto 50px;
+		width: 100%;
+	}
+	.features .btn .prev,
+	.features .btn .next{
+		top: 264px
+	}
+		.team-motivate .motivate-img {
+    float: none;
+    margin: 20px auto;
+	}
+	.team-motivate .motivate-text {
+    float: none;
+    text-align: center;
+    margin: 20px auto 40px;
+	}
+	.features .btn .prev,
+	.features .btn .next{
+		display: none;
+	}
+	.structure-item {
+    margin: 0 auto 30px;
+	}
+	form input.name,
+	form input.user-phone{
+		float: none;
+		margin-right: 0px;
+	}
+		
+	form input.email,
+	form input.birthday{
+		float: none;
+		margin-left: 0px;
+	}
+	.footer-top-wrap .logo-bottom {
+    margin: 19px auto auto;
+	}
+	.footer-top-wrap .phone{
+		width: 200px;
+		margin: 20px auto;
+		float: none;
+	}
+	.coach-wrap h2 {
+    text-align: center;
+		margin: 30px 0 0 0;
+		line-height: 34px
+	}
+	.coach-wrap {
+    text-align: center;
+	}
+	.coach-wrap ul li{
+		margin-left: 0;
+	}
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+	.poster-item {
+		margin: 40px auto;
+	}
+
+	.benefits p {
+    font-size: 13px;
+    line-height: 32px;
+	}
+
+	.benefits p span .fa {
+    font-size: 13px;
+	}
+
+
+}
+
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width : 360px) {
+	.phone{
+		font-size: 25px;
+	}
+	.phone span {
+    font-size: 15px;
+	}
+	.poster-item {
+    width: 315px;
+    height: 298px;
+	}
+	.poster-item h1 {
+    font-size: 42.28px;
+    line-height: 43.12px;
+	}
+	.poster-item p {
+    font-size: 28px;
+    line-height: 32px;
+	}
+	.poster-item .btn .poster-btn {
+    padding: 10px 21px;
+	}
+	.poster-item .btn {
+    margin-left: 13px;
+	}
+	.team-motivate .motivate-text {
+    font-size: 23px;
+    line-height: 34px;
+	}
+	.btn .poster-btn{
+		padding: 13px 34px;
+	}
+	.features .btn {
+    margin: 73px auto;
+    width: 317px;
+    position: relative;
+}
+.footer-top-wrap .phone {
+    width: 160px;
+}
+	h2{
+		font-size: 29px;
+	}
+	.coach-wrap ul li{
+		line-height: 25px;
+	}
+}
+
+
+@media only screen and (max-width : 320px) {
+	.structure-item {
+    width: 160px;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
