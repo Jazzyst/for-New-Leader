@@ -1,5 +1,7 @@
 <?php
-
+	$date=date("d.m.y"); // число.месяц.год 
+	$time=date("H:i"); // часы:минуты:секунды 
+	$backurl="http://google.com";  // На какую страничку переходит после отправки письма 
 
 
 
@@ -54,14 +56,19 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 
 mail($admin_email, adopt($form_subject), $message, $headers );
 
-
-$date=date("d.m.y"); // число.месяц.год 
-$time=date("H:i"); // часы:минуты:секунды 
-
-
 // Сохраняем в базу данных 
  
 
 $f = fopen("message.txt", "a+"); 
 fwrite($f, $message); 
 fclose($f); 
+
+print "<script language='Javascript'><!-- 
+function reload() {location = \"$backurl\"}; setTimeout('reload()', 6000); 
+//--></script> 
+ 
+$msg 
+ 
+<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";  
+exit; 
+ 
